@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Navbar from "./component/Navbar";
 import Hero from "./component/Hero";
-
+import Footer from "./component/Footer";
 import Feature from "./component/Feature";
 function App() {
  {/*
@@ -32,7 +32,7 @@ function App() {
       <Navbar />
       <Hero /> 
       <Feature />
-  
+      <Footer />
 {/*
       <div className="flex justify-center gap-4 py-6">
         <button
@@ -100,11 +100,12 @@ function App() {
           <p className="mt-3 text-xl text-[#000000]">Every component takes a few plain props.</p>
         </div>
       </main>
-      */}
+    
 
       <footer className="mt-auto bg-[#F3E6D5] px-20 py-6 text-center text-xl">
         <p>Maroon UI is free and open source.</p>
       </footer>
+        */}
     </div>
   );
 }
