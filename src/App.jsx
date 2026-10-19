@@ -2,6 +2,7 @@ import { useState } from "react";
 import Navbar from "./component/Navbar";
 import Hero from "./component/Hero";
 function App() {
+ {/*
   const [stars, setStars] = useState(0);
   const [downloads, setDownloads] = useState(0);
   const [issues, setIssues] = useState(5);
@@ -23,13 +24,13 @@ function App() {
     setDownloads(0);
     setIssues(5);
   }
-
+  */}
   return (
     <div className="flex min-h-screen flex-col bg-[#FFF9F2] text-[#800020]">
       <Navbar />
-      <Hero author="Emman Roy Pielago" />
+      <Hero author="Emman Roy Pielago" /> 
   
-
+{/*
       <div className="flex justify-center gap-4 py-6">
         <button
           className="cursor-pointer rounded-lg bg-[#800020] px-8 py-3 text-xl font-bold text-[#FFF9F2]"
@@ -71,6 +72,7 @@ function App() {
           <p className="mt-1 text-lg text-[#000000]">Issues reported</p>
         </div>
       </div>
+       */}
 
       <main className="grid grid-cols-3 gap-8 px-20">
         <div className="rounded-xl bg-[#F3E6D5] p-6">
