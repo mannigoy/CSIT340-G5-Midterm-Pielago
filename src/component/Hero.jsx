@@ -2,7 +2,7 @@ import Intro from "./Intro";
 import Stats from "./Stats";
 import { useState } from "react";
 function Hero() {
-    const [stars, setStars] = useState(0);
+  const [stars, setStars] = useState(0);
   const [downloads, setDownloads] = useState(0);
   const [issues, setIssues] = useState(5);
 
@@ -24,7 +24,7 @@ function Hero() {
     setIssues(5);
   }
 
-    
+   
   return (
     <div>
         <Intro author="Emman Roy Pielago" />
@@ -56,6 +56,9 @@ function Hero() {
       </div>
         <Stats stars={stars} downloads={downloads} issues={issues} />
       </div>
+      {/*
+        mana kos hero, ulahi ug commit
+      */}
   )
         };
  export default Hero;
