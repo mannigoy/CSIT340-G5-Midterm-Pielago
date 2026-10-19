@@ -1,3 +1,4 @@
+import Contribute from "./Contribute";
 import Intro from "./Intro";
 import Stats from "./Stats";
 import { useState } from "react";
@@ -5,6 +6,7 @@ function Hero() {
   const [stars, setStars] = useState(0);
   const [downloads, setDownloads] = useState(0);
   const [issues, setIssues] = useState(5);
+ 
 
   function handleStar() {
     setStars(stars + 1);
@@ -23,6 +25,7 @@ function Hero() {
     setDownloads(0);
     setIssues(5);
   }
+ 
 
    
   return (
@@ -55,10 +58,11 @@ function Hero() {
         </button>
       </div>
         <Stats stars={stars} downloads={downloads} issues={issues} />
+        <Contribute issues={issues} />
       </div>
-      {/*
-        mana kos hero, ulahi ug commit
-      */}
-  )
+      
+    );
+    
+      
         };
  export default Hero;
