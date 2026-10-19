@@ -2,6 +2,7 @@ import Contribute from "./Contribute";
 import Intro from "./Intro";
 import Stats from "./Stats";
 import { useState } from "react";
+import Controls from "./Controls";
 function Hero() {
   const [stars, setStars] = useState(0);
   const [downloads, setDownloads] = useState(0);
@@ -32,30 +33,11 @@ function Hero() {
     <div>
         <Intro author="Emman Roy Pielago" />
         <div className="flex justify-center gap-4 py-6">
-        <button
-          className="cursor-pointer rounded-lg bg-[#800020] px-8 py-3 text-xl font-bold text-[#FFF9F2]"
-          onClick={handleStar}
-        >
-          Star
-        </button>
-        <button
-          className="cursor-pointer rounded-lg bg-[#D45060] px-8 py-3 text-xl font-bold text-[#FFF9F2]"
-          onClick={handleDownload}
-        >
-          Download
-        </button>
-        <button
-          className="cursor-pointer rounded-lg bg-[#000000] px-8 py-3 text-xl font-bold text-[#FFF9F2]"
-          onClick={handleReport}
-        >
-          Report issue
-        </button>
-        <button
-          className="cursor-pointer rounded-lg border border-[#800020] px-8 py-3 text-xl font-bold"
-          onClick={handleReset}
-        >
-          Reset
-        </button>
+        <Controls text="Star" onClick={handleStar}></Controls>
+        <Controls text="Download" onClick={handleDownload}></Controls>
+        <Controls text="Report issue" onClick={handleReport}></Controls>
+        <Controls text="Reset" onClick={handleReset}></Controls>
+       
       </div>
         <Stats stars={stars} downloads={downloads} issues={issues} />
         <Contribute issues={issues} />
